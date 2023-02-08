@@ -4,8 +4,6 @@ import { account } from '../appwrite/appwrite'
 
 const Login = () => {
     const navigate = useNavigate()
-
-
     const login = async (e) => {
         e.preventDefault()
         const session = account.createEmailSession(user.email, user.password)
